@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+    <title>MessageBox sample</title>
+    <!--Add jquery-->
+    <script src="Scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <!--Add MessageBox-->
+    <link href="Scripts/messagebox/messagebox.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/messagebox/messagebox.js" type="text/javascript"></script>
+    <!--Style of page-->
+    <style type="text/css">
+        body
+        {
+            font-family: 0.8em Tahoma,Helvetica,Arial,sans-serif;
+        }
+    </style>
+    <!--Sample javascripts-->
+    <script type="text/javascript">
+        function showOKMessage() {
+            MessageBox.show("This is the sample message without title and default OK button.");
+        }
+
+        function showYesNoMessage() {
+            var message = "Are you sure you want to delete?";
+            var buttons = [
+                new MessageBoxButton('Yes', function () { alert("Yes button is clicked") }),
+                new MessageBoxButton('No', function () { alert("No button is clicked") })
+            ];
+            var title = "Confirmation";
+            MessageBox.show(message, buttons, title);
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="Show OK Message" onclick="showOKMessage();" />
+        <input type="button" value="Show Yes/No Message" onclick="showYesNoMessage();" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿#messagebox-overlay
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    background-color: #000000;
+    opacity: 0.3;
+	display:none;
+}
+
+#messagebox
+{
+    position: fixed;
+    width: auto;
+    z-index: 100000;
+    background-color: #ffffff;
+    color: #808080;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    -moz-border-radius: 8px;
+    -moz-box-shadow: rgba(0,0,0,0.4) 0 4px 16px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+	display:none;
+}
+
+#messagebox .messagebox-title
+{
+    border-bottom: 1px solid #C8C8C8;
+    padding: 10px 10px 10px 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#messagebox .messagebox-message
+{
+    padding: 30px 30px 30px 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#messagebox .messagebox-buttons
+{
+    padding: 10px 30px 20px 30px;
+    text-align: center;
+}
+
+#messagebox .messagebox-button
+{
+    width: 75px;
+    height: 25px;
+    border: 1px solid #C8C8C8;
+    cursor: pointer;
+    font-weight: bold;
+    color: #808080;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+#messagebox .messagebox-button:hover
+{
+    background-color: #E0E0E0;
+}
